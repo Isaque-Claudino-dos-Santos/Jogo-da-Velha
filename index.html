@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+   
+
+    <nav>
+        <div id="toogle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <div id="menu">
+            <form onsubmit="return false;">
+                <label for="p1-name">Player 1 Name</label>
+                <input type="text" id="p1-name">
+                <label for="p2-name">Player 2 Name</label>
+                <input type="text" id="p2-name">
+                <button onclick="startGame()">Começar</button>
+                <button onclick="">Reiniciar</button>
+            </form>
+        </div>
+    </nav>
+
+    <h1>Jogo da Velha</h1>
+
+    <div class="placares">
+        <div class="pontos1">X</div>
+        <div class="pontos2">O</div>
+        <div class="ganhador">------</div>
+    </div>
+
+    <div class="jogo">
+        <span id="cursorGame"></span>
+        <div onclick="jogada(this,1)" id="casa"></div>
+        <div onclick="jogada(this,2)" id="casa"></div>
+        <div onclick="jogada(this,3)" id="casa"></div>
+        <div onclick="jogada(this,4)" id="casa"></div>
+        <div onclick="jogada(this,5)" id="casa"></div>
+        <div onclick="jogada(this,6)" id="casa"></div>
+        <div onclick="jogada(this,7)" id="casa"></div>
+        <div onclick="jogada(this,8)" id="casa"></div>
+        <div onclick="jogada(this,9)" id="casa"></div>
+    </div>
+
+    <script src="./js/functions/startGame.js"></script>
+    <script src="./js/functions/jogada.js"></script>
+    <script src="./js/functions/ganhador.js"></script>
+    <script src="./js/functions/reiniciaJogo.js"></script>
+    <script src="./js/functions/regras.js"></script>
+    <script src="./js/functions/cfgValues.js"></script>
+    <script src="./js/functions/error.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/toogle.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
