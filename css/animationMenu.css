@@ -1,0 +1,23 @@
+.menu {
+    position: absolute;
+    transition-duration: 0.3s;  
+}
+
+.menuLeft {
+    top: 0;
+    left: 0; 
+}
+
+.menuCenter {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+.menuCenter #toogle {
+    display: none;
+}
+
+.menuCenter #menu {
+    opacity: 10;
+}
