@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animationMenu.css">
 </head>
 
 <body>
-
-   
-
-    <nav>
+    <nav class="menu menuCenter">
         <div id="toogle">
             <i></i>
             <i></i>
@@ -25,7 +23,6 @@
                 <label for="p2-name">Player 2 Name</label>
                 <input type="text" id="p2-name">
                 <button onclick="startGame()">Começar</button>
-                <button onclick="">Reiniciar</button>
             </form>
         </div>
     </nav>
@@ -38,7 +35,7 @@
         <div class="ganhador">------</div>
     </div>
 
-    <div class="jogo">
+    <div class="jogo ocuto">
         <span id="cursorGame"></span>
         <div onclick="jogada(this,1)" id="casa"></div>
         <div onclick="jogada(this,2)" id="casa"></div>
