@@ -1,12 +1,12 @@
 let jogador1 = {
-    nome: "P1",
+    nome: "",
     forma: "x",
     postos: 0
 };
 
 let jogador2 = {
-    nome: "P2",
-    forma: "o",
+    nome: "",
+    forma: "🔥",
     postos: 0
 };
 
