@@ -1,5 +1,5 @@
 let toogle = document.getElementById('toogle');
-let menu = document.getElementById('menu');
+let menu = document.getElementById('form');
 
 toogle.onclick = () => {
     toogle.classList.toggle('active');
