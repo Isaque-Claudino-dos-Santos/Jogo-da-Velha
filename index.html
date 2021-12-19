@@ -16,12 +16,25 @@
             <i></i>
             <i></i>
         </div>
-        <div id="menu">
+        <div id="form">
             <form onsubmit="return false;">
-                <label for="p1-name">Player 1 Name</label>
-                <input type="text" id="p1-name">
-                <label for="p2-name">Player 2 Name</label>
-                <input type="text" id="p2-name">
+                <fieldset>
+                    <label for="p1-name">Player1 Name:</label>
+                    <input type="text" id="p1-name">
+                    <select class="peca-p1">
+                        <option selected hidden value="">Escolha a peça</option>
+                        <option value="x">x</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="p2-name">Player2 Name:</label>
+                    <input type="text" id="p2-name">
+                    <select class="peca-p2">
+                        <option selected hidden value="">Escolha a peça</option>
+                        <option value="o">o</option>
+                    </select>
+                </fieldset>
                 <button onclick="startGame()">Começar</button>
             </form>
         </div>
@@ -48,6 +61,7 @@
         <div onclick="jogada(this,9)" id="casa"></div>
     </div>
 
+    <script src="./js/adicionarEmojis.js"></script>
     <script src="./js/functions/startGame.js"></script>
     <script src="./js/functions/jogada.js"></script>
     <script src="./js/functions/ganhador.js"></script>
