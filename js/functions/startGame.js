@@ -9,7 +9,10 @@ function startGame() {
  
     let cfg = getSetingValue();
     jogador1.nome = cfg.p1_name;
+    jogador1.forma = cfg.p1_peca;
+
     jogador2.nome = cfg.p2_name;
+    jogador2.forma = cfg.p2_peca;
    
     gameStartState = true;
 }
