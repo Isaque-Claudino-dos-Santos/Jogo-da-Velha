@@ -67,20 +67,7 @@ body {
     transition-duration: 0.3s;
 }
 
-#menu {
-    opacity: 0;
-}
 
-#menu.active {
-    opacity: 10;
-}
-
-
-
-nav form {
-    display: flex;
-    flex-direction: column;
-}
 
 h1 {
     font-family: 'Gill Sans MT';
