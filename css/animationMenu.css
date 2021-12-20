@@ -35,7 +35,7 @@
     margin: 1%;
 }
 
-#form {
+.container{
     height: 100%;
     opacity: 0;
 }
@@ -59,6 +59,6 @@
     display: none;
 }
 
-.menuCenter #form {
+.menuCenter .container{
     opacity: 10;
 }
