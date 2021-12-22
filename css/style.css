@@ -17,93 +17,18 @@ body {
     flex-direction: column;
 }
 
-#toogle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    margin: 15px;
-    background-color: white;
-    overflow: hidden;
-    transition-duration: 0.3s;
-}
 
-#toogle i {
-    width: 90%;
-    height: 20%;
-    background-color: black;
-    transition-duration: 0.3s;
-
-}
-
-#toogle.active i {
-    background-color: white;
-}
-
-#toogle.active i:nth-child(2) {
-    opacity: 0;
-    transition-duration: 0.3s;
-}
-
-#toogle.active i:nth-child(1) {
-    width: 110%;
-    transform: rotate(45deg);
-    transition-duration: 0.3s;
-
-}
-
-#toogle.active i:nth-child(3) {
-    width: 110%;
-    transform: rotate(-45deg);
-    transition-duration: 0.3s;
-}
-
-#toogle.active  {
-    background-color: black;
-    border: 1px solid white;
-    transform: rotate(90deg);
-    transition-duration: 0.3s;
-}
-
-
-
-h1 {
-    font-family: 'Gill Sans MT';
-    font-size: 60px;
-    text-decoration: underline;
-}
-
-#cursorGame::selection {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#cursorGame {
-    color: #64f740;
-    text-shadow: -3px -4px 10px #87e470;
-    position: absolute;
-    font-size: 2rem;
-}
-
-.ocuto {
-    display: none;
-}
-
-.ativo {
-    display: flex;
-}
-
-.jogo {
+.board {
     position: relative;
     margin: 10px;
     width: 300px;
     height: 300px;
-    flex-wrap: wrap;
     box-shadow: 3px 9px 3px 2px whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.jogo div {
+.board div {
     display: flex;
     justify-content: center;
     align-items: center;
