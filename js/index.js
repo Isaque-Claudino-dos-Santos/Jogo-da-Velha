@@ -8,7 +8,6 @@ function startGame() {
 function returnBoardHome(input,board_home) {
     game.setValues();
     game.playerMove(input,board_home);
-    console.log(game.currentPlayer);
 }
 
 
