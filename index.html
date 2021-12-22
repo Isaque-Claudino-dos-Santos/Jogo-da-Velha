@@ -6,73 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/animationMenu.css">
+     <!-- <link rel="stylesheet" href="./css/animationMenu.css"> -->
 </head>
 
 <body>
 
-        <div class="menu menuCenter">
-        <div id="toogle">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
+    <header>
         <div class="container">
+            <div class="title">
+                <h1>Jogo da Velha</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="form_container">
+            <div id="burger_button">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
             <form onsubmit="return false;">
                 <fieldset>
-                    <label for="p1-name">Player1 Name:</label>
-                    <input type="text" id="p1-name">
-                    <select class="peca-p1">
-                        <option selected hidden value="">Escolha a peça</option>
+                    <label for="player1_name">Name Player 1</label>
+                    <input type="text" id="player1_name">
+                    <select class="player1_piece">
+                        <option selected hidden value="none">Escolha a peça</option>
                         <option value="x">x</option>
                     </select>
                 </fieldset>
-                
+
                 <fieldset>
-                    <label for="p2-name">Player2 Name:</label>
-                    <input type="text" id="p2-name">
-                    <select class="peca-p2">
-                        <option selected hidden value="">Escolha a peça</option>
+                    <label for="player2_name">Name Player 2</label>
+                    <input type="text" id="player2_name">
+                    <select class="player2_piece">
+                        <option selected hidden value="none">Escolha a peça</option>
                         <option value="o">o</option>
                     </select>
                 </fieldset>
                 <button onclick="startGame()">Começar</button>
             </form>
         </div>
-    </div>
+    </nav>
 
-    <h1>Jogo da Velha</h1>
+    <main>
+        <div class="container">
 
-    <div class="placares">
-        <div class="pontos1">X</div>
-        <div class="pontos2">O</div>
-        <div class="ganhador">------</div>
-    </div>
+            <div class="status_game">
+                <div class="score_player1">X</div>
+                <div class="score_player2">O</div>
+                <div class="winner_message">------</div>
+            </div>
 
-    <div class="jogo ocuto">
-        <span id="cursorGame"></span>
-        <div onclick="jogada(this,1)" id="casa"></div>
-        <div onclick="jogada(this,2)" id="casa"></div>
-        <div onclick="jogada(this,3)" id="casa"></div>
-        <div onclick="jogada(this,4)" id="casa"></div>
-        <div onclick="jogada(this,5)" id="casa"></div>
-        <div onclick="jogada(this,6)" id="casa"></div>
-        <div onclick="jogada(this,7)" id="casa"></div>
-        <div onclick="jogada(this,8)" id="casa"></div>
-        <div onclick="jogada(this,9)" id="casa"></div>
-    </div>
+            <div class="board">
+                <div onclick="boardHome(this,1)" id="board_home"></div>
+                <div onclick="boardHome(this,2)" id="board_home"></div>
+                <div onclick="boardHome(this,3)" id="board_home"></div>
+                <div onclick="boardHome(this,4)" id="board_home"></div>
+                <div onclick="boardHome(this,5)" id="board_home"></div>
+                <div onclick="boardHome(this,6)" id="board_home"></div>
+                <div onclick="boardHome(this,7)" id="board_home"></div>
+                <div onclick="boardHome(this,8)" id="board_home"></div>
+                <div onclick="boardHome(this,9)" id="board_home"></div>
+            </div>
+        </div>
+    </main>
 
-    <script src="./js/adicionarEmojis.js"></script>
-    <script src="./js/functions/startGame.js"></script>
-    <script src="./js/functions/jogada.js"></script>
-    <script src="./js/functions/ganhador.js"></script>
-    <script src="./js/functions/reiniciaJogo.js"></script>
-    <script src="./js/functions/regras.js"></script>
-    <script src="./js/functions/cfgValues.js"></script>
-    <script src="./js/functions/error.js"></script>
-    <script src="./js/cursor.js"></script>
-    <script src="./js/toogle.js"></script>
-    <script src="./js/script.js"></script>
+
+
+
+    
+    <script src="./js/classes/Validations.js"></script>
+    <script src="./js/classes/Game.js"></script>
+    <script src="./js/index.js"></script>
+
+  
+
 </body>
 
 </html>
