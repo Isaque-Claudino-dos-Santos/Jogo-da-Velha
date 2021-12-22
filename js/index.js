@@ -2,11 +2,11 @@ let game = new Game();
 
 
 function startGame() {
-    game.startGame();
+    game.setValues();
 }
 
-function boardHome(input,board_home) {
-    game.startGame();
+function returnBoardHome(input,board_home) {
+    game.setValues();
     game.playerMove(input,board_home);
     console.log(game.currentPlayer);
 }
