@@ -33,7 +33,7 @@ class Game extends Validations {
         super.rules();
     };
 
-    startGame() {
+    setValues() {
         let cfg = this.#getValueStartGame();
         this.player1.name = cfg.player1_name;
         this.player1.form = cfg.player1_piece;
