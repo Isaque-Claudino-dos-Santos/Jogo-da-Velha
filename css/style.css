@@ -31,3 +31,13 @@ body {
     text-shadow: -1px -1px 5px rgb(74, 204, 255), -2px -2px 5px rgb(59, 59, 207), 0px 5px 5px blue;
     text-shadow: inset 1px 1px 5px blue;
 }
+
+
+
+main.on {
+    display: block;
+}
+
+main.off {
+    display: none;
+}
