@@ -17,16 +17,16 @@
     background-color: white;
     box-shadow: 0px calc(var(--h-btn) / 3.3) 0 0 white ,
     0px calc(var(--h-btn) / -3.3) 0 0 white;
+    transition-duration: 0.3s;
 }
 
 .burger_button.off {
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 }
 
 .burger_button.on i{
     box-shadow: 0 0 0 0 transparent;
     transform: rotate(47deg);
-    transition-duration: 0.2s;
 }
 
 .burger_button.on i::after{
