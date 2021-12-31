@@ -11,7 +11,7 @@ class Game extends Validations {
         score: 0
     };
 
-    gameStart = true;
+    gameStart = false;
     currentPlayer = this.player1;
     boardIsFilled = [9];
     board = [9];
