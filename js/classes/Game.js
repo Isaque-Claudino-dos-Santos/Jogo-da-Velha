@@ -46,7 +46,7 @@ class Game extends Validations {
         let player1_name = document.getElementById('player1_name').value;
         let player2_name = document.getElementById('player2_name').value;
         let player1_piece = document.querySelector('.player1_piece').value;
-        let player2_piece = document.querySelector('.player1_piece').value;
+        let player2_piece = document.querySelector('.player2_piece').value;
 
 
         let cfg = {
@@ -61,7 +61,7 @@ class Game extends Validations {
             cfg.player2_piece = 'o';
         }
 
-        if (player1_name.value == undefined || player2_name.value == undefined) {
+        if (player1_name.value == '' || player2_name.value == '') {
             cfg.player1_name = 'P1';
             cfg.player2_name = 'p2';
         }
