@@ -1,0 +1,8 @@
+.form_state_off {
+    display: none;
+}
+
+.form_state_on {
+    display: block;
+}
+
